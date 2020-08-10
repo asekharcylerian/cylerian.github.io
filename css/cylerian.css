@@ -55,7 +55,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     min-height: 100%;
     background-color: #fff;
     font-family: "Gotham Pro", sans-serif;

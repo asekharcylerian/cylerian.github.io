@@ -92,7 +92,7 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;/*
         -webkit-flex-direction: column;
-        -ms-flex-direction: column; 
+        -ms-flex-direction: column;
         flex-direction: column;*/
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -111,7 +111,6 @@
     }
     .h2.hero-title.mobile {
         display: block;
-        text-align:center;
     }
     .h2.hero-title.inner {
         display: block;
@@ -120,7 +119,6 @@
     .subhead.hero-subhead {
         max-width: 600px;
         margin-bottom: 25px;
-        margin: 0 auto;
     }
     .subhead-key-features {
         text-align: center;
@@ -216,10 +214,12 @@
         padding-top:0;
     }
    .feature-image{
-max-width: 100%;
-padding:0;
-margin-left:0;
-text-align:center;
+        max-width: 100%;
+        width:180px;
+        padding:0;
+        margin-left:0;
+        text-align:center;
+        margin: 0 auto;
    }
    .h2-inherit, .h3-inherit {
     font-size: 2.15em;
@@ -227,18 +227,20 @@ text-align:center;
     text-align: center;
    }
    .main-feature-text {
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 65vw;
     text-align: center;
     line-height: 1.7em;
+    margin: 0 auto;
 }
 .buttondiv, .buttondiv-key-features {
     display: table;
     margin: 0 auto;
 }
 .learn-morelink {
-    padding: 15px 45px 15px 80px;
-    background-size: 25px;
+    padding: 15px 35px 15px 55px;
+    background-size: 20px;
+    font-size: .85em;
 }
 .button-text{
     font-size: 1.5em;
@@ -695,6 +697,9 @@ text-align:center;
     }
 }
 @media screen and (max-width: 479px) {
+    .space {
+        margin-top: 70px;
+    }
     .column.is-6, .column.is-full.is-flex.justify-center,.column.is-flex.justify-center,.columns.is-centered.is-variable.is-5 {
         margin-top:3vh;
     }
@@ -706,7 +711,8 @@ text-align:center;
         padding-right: 5%;
     }
     .subtitle {
-        margin-top:0;
+        width: 80vw;
+        margin: 0 auto;
     }
     .h3-inherit.white{
 padding-top:0;
@@ -724,7 +730,7 @@ text-transform: uppercase;
         padding: 0px 0px 0px 0px
     }
     .column.is-7.box {
-        padding-top:15vh;
+        padding-top:5vh;
     }
     .columns.is-centered.partners{
         padding-top:0px;
@@ -778,9 +784,10 @@ padding: 10px 10px 10px 10px;
         line-height: 34px;
     }
     .h2.hero-title.mobile {
-        font-size: 23px;
-        line-height: 35px;
+        font-size: 2em;
+        line-height: 1.3em;
     }
+   
     .h2.last {
         margin-right: 5%;
         margin-left: 5%;
@@ -803,7 +810,7 @@ padding: 10px 10px 10px 10px;
         margin-top: 0;
     }
     .key-features, .key-values {
-        width: 70vw;
+        width: 85vw;
     }
     .nav-button {
         width: 90%;
@@ -830,6 +837,7 @@ padding: 10px 10px 10px 10px;
     }
     .large-cta-text {
         font-size: 23px;
+        width: 80vw
     }
     .cta-subtext {
         width: 95%;
@@ -918,5 +926,12 @@ padding: 10px 10px 10px 10px;
     .cta-box {
         padding-top: 0;
         padding-bottom: 19px;
+    }
+    .subhead.hero-subhead, .main-feature-text, .main-key-feature-text{
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .main-feature-text, .main-key-feature-text {
+        width:85vw;
     }
 }
